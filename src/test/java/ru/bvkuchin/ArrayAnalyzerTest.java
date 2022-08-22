@@ -31,12 +31,11 @@ class ArrayAnalyzerTest {
         return Stream.of(
                 Arguments.arguments(new int[]{5, 6}, new int[]{1, 2, 3, 4, 5, 6}),
                 Arguments.arguments(new int[]{5, 6}, new int[]{4, 1, 2, 3, 4, 5, 6}),
-                Arguments.arguments(new int[]{5, 6 ,7,8}, new int[]{1, 2, 3, 4, 5, 6, 7, 8}),
+                Arguments.arguments(new int[]{5, 6 ,7, 8}, new int[]{1, 2, 3, 4, 5, 6, 7, 8}),
                 Arguments.arguments(new int[]{}, new int[]{1, 2, 3, 4}),
                 Arguments.arguments(new int[]{}, new int[]{4, 5, 6, 4})
         );
     }
-
 
     @Test
     void exceptionTest() {
